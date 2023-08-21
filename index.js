@@ -7,6 +7,7 @@ const { appoinmentRouter } = require("./routes/appointment.routes")
 const app = express()
 app.use(express.json())
 require("dotenv").config()
+app.use(cors())
 
 app.use("/users",userRouter)
 app.use("/appointments",appoinmentRouter)
