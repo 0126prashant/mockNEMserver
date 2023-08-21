@@ -2,7 +2,7 @@ const express = require("express")
 const { connection } = require("./db")
 const { userRouter } = require("./routes/user.routes")
 const { appoinmentRouter } = require("./routes/appointment.routes")
-
+const cors = require("cors")
 
 const app = express()
 app.use(express.json())
